@@ -80,6 +80,11 @@ namespace RAA_Int_Module01_Skills
                 t.Commit();
             }
 
+            // code snippit for filtering a list for unique items
+            List<string> rawStrings = new List<string>() { "a", "a", "d", "c", "c", "d", "b", "d" };
+            List<string> uniqueStrings = rawStrings.Distinct().ToList();
+            uniqueStrings.Sort();
+
             return Result.Succeeded;
         }
 
